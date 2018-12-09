@@ -1,7 +1,5 @@
 # Andrew's Perosnal Website
 
-##
-
 Find my website here: http://andrewmanzanero.com
 
 ## Copyright and License
