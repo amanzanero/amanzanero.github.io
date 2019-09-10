@@ -1,4 +1,4 @@
-# Andrew's Perosnal Website
+# Andrew's Personal Website
 
 Find my website here: https://andrewmanzanero.com
 
