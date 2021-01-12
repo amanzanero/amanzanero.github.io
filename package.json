@@ -1,0 +1,25 @@
+{
+  "name": "amanzanero.github.io",
+  "version": "1.0.0",
+  "description": "This is my old, bootstrab based, website using html, css, and js.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "serve": "serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amanzanero/amanzanero.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amanzanero/amanzanero.github.io/issues"
+  },
+  "homepage": "https://github.com/amanzanero/amanzanero.github.io#readme",
+  "devDependencies": {
+    "serve": "^11.3.2"
+  },
+  "dependencies": {}
+}
