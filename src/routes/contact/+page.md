@@ -2,11 +2,18 @@
   import Contacts from './Contacts.svelte'
 </script>
 
+<svelte:head>
+
+<title>Contact - Andrew Manzanero</title>
+</svelte:head>
+
 # Contact
 
 Shoot me a message through <a href="https://andrewmanzanero.typeform.com/to/IxjCPK" target="_blank" rel="noreferrer">Typeform</a>
 
 Or email me: andrewpublic.fo76t at simplelogin dot com
+
+---
 
 ## Where else you can find me
 

@@ -5,6 +5,7 @@
 
 <div class="prose">
 	<h1>Blog</h1>
+	<hr />
 	{#if data.posts.length === 0}
 		<p>No posts yet!</p>
 	{:else}

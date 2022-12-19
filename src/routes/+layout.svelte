@@ -6,6 +6,9 @@
 	import Spacer from '$lib/components/Spacer.svelte';
 </script>
 
+<svelte:head>
+	<title>Andrew Manzanero - Home</title>
+</svelte:head>
 <Header />
 <main class="w-full pt-5 grow">
 	<Spacer>
