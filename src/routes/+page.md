@@ -1,8 +1,4 @@
-# README.md
-
----
-
-## Intro
+# About me
 
 Welcome! My name is Andrew, and I'm a Software Engineer based out of San Francisco, California.
 I'm currently working at **Asana** on the Mobile Foundations team, where I'm helping make mobile
