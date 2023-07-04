@@ -9,9 +9,7 @@
 
 # Contact
 
-Shoot me a message through <a href="https://andrewmanzanero.typeform.com/to/IxjCPK" target="_blank" rel="noreferrer">Typeform</a>
-
-Or email me: andrewpublic.fo76t at simplelogin dot com
+Shoot me an email contact@amanzanero dot com
 
 ---
 
