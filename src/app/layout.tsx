@@ -22,31 +22,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
-      <body className={cn(font.className, "flex min-h-[100dvh] flex-col ")}>
+      <body
+        className={cn(font.className, "flex min-h-[100dvh] w-full flex-col")}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <main className="flex w-full flex-1 justify-center px-4 pt-4 sm:pt-16">
-            <section className="flex w-full max-w-screen-md flex-col">
+          <Header />
+          <Separator />
+          <main className="flex w-full flex-1 justify-center px-4 pt-4 sm:pt-8">
+            <section className="max-w-screen-md flex-1 flex-col">
               {children}
             </section>
           </main>
-          <Separator />
-          <Footer />
         </ThemeProvider>
       </body>
     </html>
   );
 }
 
-const Footer = () => {
+const Header = () => {
   return (
-    <footer className="flex w-full justify-center p-4">
+    <header className="flex w-full justify-center p-4">
       <div className="w-full max-w-screen-md">
-        <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between">
+        <div className="flex  justify-end gap-4 md:flex-row">
           <div className="flex flex-col items-start gap-2 md:flex-row md:items-center">
             <Link
               className="text-sm font-medium text-blue-600 underline-offset-4 hover:underline dark:text-blue-500"
@@ -69,11 +71,8 @@ const Footer = () => {
               Blog
             </Link>
           </div>
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            Andrew Manzanero {new Date().getFullYear()}
-          </p>
         </div>
       </div>
-    </footer>
+    </header>
   );
 };
