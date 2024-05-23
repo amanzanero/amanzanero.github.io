@@ -1,16 +1,26 @@
-import { ThemeToggle } from "@/components/themeToggle";
 import { A, H1, H2, H3, P } from "@/components/ui/typography";
+import Image from "next/image";
 import React from "react";
 
 export default function Home() {
   return (
     <main className="flex w-full flex-1 justify-center px-4 py-4 sm:py-16">
       <section className="flex w-full max-w-screen-md flex-col">
-        <div className="flex w-full flex-row items-center justify-between space-y-0">
-          <H1>Hi, I&apos;m Andrew 👋</H1>
-          <ThemeToggle />
+        <div className="flex w-full items-center justify-between">
+          <H1>
+            Hi, I&apos;m
+            <br />
+            Andrew 👋
+          </H1>
+          <Image
+            src="/pfp.png"
+            alt="profile picutre"
+            height={100}
+            width={100}
+            className="mr-4 rounded-full"
+          />
         </div>
-        <div className="h-4" />
+        <div className="h-2" />
         <P>
           Welcome to my personal website! I have some basic info about myself,
           what I do for work, and how you can get in touch with me.

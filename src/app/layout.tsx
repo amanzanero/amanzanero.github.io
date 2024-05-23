@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Roboto_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/themeProvider";
 
-const font = Roboto_Mono({ subsets: ["latin"], weight: "400" });
+const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Andrew Manzanero",
