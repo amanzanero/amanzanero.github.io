@@ -1,17 +1,8 @@
-"use client";
 import { ThemeToggle } from "@/components/themeToggle";
 import { A, H1, H2, H3, P } from "@/components/ui/typography";
 import React from "react";
 
 export default function Home() {
-  const aboutMeRef = React.useRef<HTMLDivElement>(null);
-  const interestsRef = React.useRef<HTMLDivElement>(null);
-  const getInTouchRef = React.useRef<HTMLDivElement>(null);
-
-  const tableOfContentsClick = (ref: React.RefObject<HTMLDivElement>) => {
-    ref.current?.scrollIntoView();
-  };
-
   return (
     <main className="flex w-full flex-1 justify-center px-4 py-4 sm:py-16">
       <section className="flex w-full max-w-screen-md flex-col">
@@ -29,33 +20,33 @@ export default function Home() {
           <H3>On this page:</H3>
           <ul className="list-disc pl-5 pt-2 sm:pl-4">
             <li>
-              <span
-                className="cursor-pointer text-blue-600 hover:underline dark:text-blue-500"
-                onClick={() => tableOfContentsClick(aboutMeRef)}
+              <a
+                href="#about-me"
+                className="text-blue-600 hover:underline dark:text-blue-500"
               >
                 About me
-              </span>
+              </a>
             </li>
             <li>
-              <span
-                className="cursor-pointer text-blue-600 hover:underline dark:text-blue-500"
-                onClick={() => tableOfContentsClick(interestsRef)}
+              <a
+                href="#interests"
+                className="text-blue-600 hover:underline dark:text-blue-500"
               >
                 Interests
-              </span>
+              </a>
             </li>
             <li>
-              <span
-                className="cursor-pointer text-blue-600 hover:underline dark:text-blue-500"
-                onClick={() => tableOfContentsClick(getInTouchRef)}
+              <a
+                href="#get-in-touch"
+                className="text-blue-600 hover:underline dark:text-blue-500"
               >
                 Get in touch
-              </span>
+              </a>
             </li>
           </ul>
         </div>
-        <div ref={aboutMeRef} className="h-8" />
-        <H2>About me</H2>
+        <div className="h-8" />
+        <H2 id="about-me">About me</H2>
         <P>
           My name is Andrew, and I’m a Software Engineer based out of San
           Francisco, California. I’m currently working at&nbsp;
@@ -69,8 +60,8 @@ export default function Home() {
           as a Software Engineer at Microsoft, Honey (acquired by PayPal), and
           American Express
         </P>
-        <div ref={interestsRef} className="h-8" />
-        <H2>Interests</H2>
+        <div className="h-8" />
+        <H2 id="interests">Interests</H2>
         <P>
           Outside of tech, some of my hobbies include: teaching/mentoring,
           playing Super Smash Bros (Bowser and Ike mains for those who care),
@@ -83,8 +74,8 @@ export default function Home() {
           , whose focus is to promote Hispanic & Latino excellence within STEM
           fields in industry & academia.
         </P>
-        <div ref={getInTouchRef} className="h-8" />
-        <H2>Get in touch</H2>
+        <div className="h-8" />
+        <H2 id="get-in-touch">Get in touch</H2>
         <P>
           Feel free to email me at&nbsp;
           <A href="mailto:contact@amanzanero.com">info@amanzanero.com</A>
