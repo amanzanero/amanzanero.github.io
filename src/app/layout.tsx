@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/themeProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Roboto_Mono({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Andrew Manzanero",
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
-      <body className={cn(inter.className, "flex flex-col")}>
+      <body className={cn(font.className, "flex flex-col")}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

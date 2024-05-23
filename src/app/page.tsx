@@ -58,7 +58,7 @@ export default function Home() {
           <A href="https://usc.edu">University of Southern California</A>
           &nbsp;with a degree in Computer Science. In the past, I have interned
           as a Software Engineer at Microsoft, Honey (acquired by PayPal), and
-          American Express
+          American Express.
         </P>
         <div className="h-8" />
         <H2 id="interests">Interests</H2>
