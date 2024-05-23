@@ -47,31 +47,27 @@ export default function RootLayout({
 const Header = () => {
   return (
     <header className="flex w-full justify-center p-4">
-      <div className="w-full max-w-screen-md">
-        <div className="flex  justify-end gap-4 md:flex-row">
-          <div className="flex flex-col items-start gap-2 md:flex-row md:items-center">
-            <Link
-              className="text-sm font-medium text-blue-600 underline-offset-4 hover:underline dark:text-blue-500"
-              href="/"
-            >
-              Home
-            </Link>
-            <div className="hidden h-4 w-px bg-gray-300 dark:bg-gray-700 md:block" />
-            <Link
-              className="text-sm font-medium text-blue-600 underline-offset-4 hover:underline dark:text-blue-500"
-              href="/work"
-            >
-              Work
-            </Link>
-            <div className="hidden h-4 w-px bg-gray-300 dark:bg-gray-700 md:block" />
-            <Link
-              className="text-sm font-medium text-blue-600 underline-offset-4 hover:underline dark:text-blue-500"
-              href="/blog"
-            >
-              Blog
-            </Link>
-          </div>
-        </div>
+      <div className="flex w-full max-w-screen-md flex-row items-center justify-end gap-2">
+        <Link
+          className="font-medium text-blue-600 underline-offset-4 hover:underline dark:text-blue-500"
+          href="/"
+        >
+          Home
+        </Link>
+        <div className="block h-6 w-px bg-gray-300 dark:bg-gray-700" />
+        <Link
+          className="font-medium text-blue-600 underline-offset-4 hover:underline dark:text-blue-500"
+          href="/work"
+        >
+          Work
+        </Link>
+        <div className="block h-6 w-px bg-gray-300 dark:bg-gray-700" />
+        <Link
+          className="font-medium text-blue-600 underline-offset-4 hover:underline dark:text-blue-500"
+          href="/blog"
+        >
+          Blog
+        </Link>
       </div>
     </header>
   );
