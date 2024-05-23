@@ -101,7 +101,7 @@ export const A: TypographyComponent<
   <a
     className={cn(
       className,
-      "text-blue-600 hover:underline dark:text-blue-500",
+      "font-medium text-blue-600 underline-offset-4 hover:underline dark:text-blue-500",
     )}
     {...props}
     target="_blank"
