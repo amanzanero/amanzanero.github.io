@@ -13,7 +13,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex w-full flex-1 justify-center p-4">
+    <main className="flex w-full flex-1 justify-center px-4 py-4 sm:py-16">
       <section className="flex w-full max-w-screen-md flex-col">
         <div className="flex w-full flex-row items-center justify-between space-y-0">
           <H1>Hi, I&apos;m Andrew 👋</H1>
