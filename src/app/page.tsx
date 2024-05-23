@@ -27,7 +27,7 @@ export default function Home() {
         <div className="h-4 sm:hidden" />
         <div className="flex w-full flex-col sm:hidden">
           <H3>On this page:</H3>
-          <ul className="list-disc pl-4 pt-2">
+          <ul className="list-disc pl-5 pt-2 sm:pl-4">
             <li>
               <span
                 className="cursor-pointer text-blue-600 hover:underline dark:text-blue-500"
@@ -91,7 +91,7 @@ export default function Home() {
         </P>
 
         <P>Other places you can find me:</P>
-        <ul className="list-disc pl-4">
+        <ul className="list-disc pl-5 sm:pl-4">
           <li>
             <A href="https://github.com/amanzanero">github.com/amanzanero</A>
           </li>
