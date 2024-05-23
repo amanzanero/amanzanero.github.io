@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Andrew Manzanero",
   description: "Personal website, portfolio, and contact information.",
+  icons: "/favicon.ico",
 };
 
 export default function RootLayout({
