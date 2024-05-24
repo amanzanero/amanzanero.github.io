@@ -29,28 +29,13 @@ export default function Home() {
         <H3>On this page:</H3>
         <ul className="list-disc pl-5 pt-2 sm:pl-4">
           <li>
-            <a
-              href="#about-me"
-              className="text-blue-600 hover:underline dark:text-blue-500"
-            >
-              About me
-            </a>
+            <A href="#about-me">About me</A>
           </li>
           <li>
-            <a
-              href="#interests"
-              className="text-blue-600 hover:underline dark:text-blue-500"
-            >
-              Interests
-            </a>
+            <A href="#interests">Interests</A>
           </li>
           <li>
-            <a
-              href="#get-in-touch"
-              className="text-blue-600 hover:underline dark:text-blue-500"
-            >
-              Get in touch
-            </a>
+            <A href="#get-in-touch">Get in touch</A>
           </li>
         </ul>
       </div>
@@ -59,12 +44,17 @@ export default function Home() {
       <P>
         My name is Andrew, and I’m a Software Engineer based out of San
         Francisco, California. I’m currently working at&nbsp;
-        <A href="https://asana.com/">Asana</A> on the Core Performance team,
-        working to make the webapp as fast and snappy as possible.
+        <A href="https://asana.com/" newTab>
+          Asana
+        </A>
+        &nbsp;on the Core Performance team, working to make the webapp as fast
+        and snappy as possible.
       </P>
       <P>
         Before Asana, I graduated from the&nbsp;
-        <A href="https://usc.edu">University of Southern California</A>
+        <A href="https://usc.edu" newTab>
+          University of Southern California
+        </A>
         &nbsp;with a degree in Computer Science. In the past, I have interned as
         a Software Engineer at Microsoft, Honey (acquired by PayPal), and
         American Express.
@@ -77,7 +67,7 @@ export default function Home() {
         anime. I&apos;m also really passionate about empowering fellow
         minorities to pursue careers in STEM. At school I was involved with
         the&nbsp;
-        <A href="https://shpe.org/">
+        <A href="https://shpe.org/" newTab>
           Society of Hispanic Professional Engineers
         </A>
         , whose focus is to promote Hispanic & Latino excellence within STEM
@@ -93,10 +83,12 @@ export default function Home() {
       <P>Other places you can find me:</P>
       <ul className="list-disc pl-5 sm:pl-4">
         <li>
-          <A href="https://github.com/amanzanero">github.com/amanzanero</A>
+          <A href="https://github.com/amanzanero" newTab>
+            github.com/amanzanero
+          </A>
         </li>
         <li>
-          <A href="https://twitter.com/AndrewManzanero">
+          <A href="https://twitter.com/AndrewManzanero" newTab>
             twitter.com/AndrewManzanero
           </A>
           &nbsp;(I don&apos;t tweet much)

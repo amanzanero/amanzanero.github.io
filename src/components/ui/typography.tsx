@@ -4,7 +4,8 @@ import React from "react";
 type TypographyComponent<
   T = HTMLElement,
   V extends React.HTMLAttributes<T> = React.HTMLAttributes<T>,
-> = React.FC<React.PropsWithChildren<React.DetailedHTMLProps<V, T>>>;
+  Q = {},
+> = React.FC<React.PropsWithChildren<React.DetailedHTMLProps<V, T>> & Q>;
 
 export const H1: TypographyComponent<HTMLHeadingElement> = ({
   className,
@@ -96,16 +97,17 @@ export const BlockQuote: TypographyComponent<
 
 export const A: TypographyComponent<
   HTMLAnchorElement,
-  React.AnchorHTMLAttributes<HTMLAnchorElement>
-> = ({ className, children, ...props }) => (
+  React.AnchorHTMLAttributes<HTMLAnchorElement>,
+  { newTab?: true }
+> = ({ className, children, newTab, ...props }) => (
   <a
     className={cn(
       className,
       "font-medium text-blue-600 underline-offset-4 hover:underline dark:text-blue-500",
     )}
     {...props}
-    target="_blank"
-    rel="noopener noreferrer"
+    target={newTab === true ? "_blank" : props.target}
+    rel={newTab === true ? "noopener noreferrer" : props.rel}
   >
     {children}
   </a>
